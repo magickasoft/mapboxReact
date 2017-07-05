@@ -19,12 +19,7 @@ import App from 'containers/App';
 import Login from 'containers/Login';
 import RecoveryPassword from 'containers/RecoveryPassword';
 import NotificationContainer from 'containers/Notification';
-
 import Overview from 'containers/Overview';
-import Tasks from 'containers/Tasks';
-import GoFundis from 'containers/GoFundis';
-import Subscribers from 'containers/Subscribers';
-
 import {
     createStore
 } from 'store';
@@ -63,25 +58,6 @@ const routes = {
                     path: 'overview',
                     component: props => (
                         <Overview {...props} />
-                    )
-                },
-                {
-                    path: 'tasks',
-                    component: props => (
-                        <Tasks {...props} />
-                    )
-                },
-                {
-                    path: 'gofundis',
-                    component: props => (
-                        <GoFundis {...props} />
-
-                    )
-                },
-                {
-                    path: 'subscribers',
-                    component: props => (
-                        <Subscribers {...props} />
                     )
                 }
             ]
